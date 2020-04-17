@@ -3,16 +3,9 @@
 #  profiles:
 #    active: dev
 
-person:
-  name: 张三
-  age: ${random.int(30)}
-  pets:
-    species: 猫
-    name: 糖果
-    age: 5
-  family:
-    - mum
-    - grandma
+spring:
+  messages:
+    basename: i18n.login
 
 #logging:
 #  #设置日志等级，需要指定包名
