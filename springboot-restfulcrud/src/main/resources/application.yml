@@ -6,7 +6,8 @@
 spring:
   messages:
     basename: i18n.login
-
+  thymeleaf:
+    cache: false
 #logging:
 #  #设置日志等级，需要指定包名
 #  level:
