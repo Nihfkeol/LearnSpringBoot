@@ -8,6 +8,10 @@ spring:
     basename: i18n.login
   thymeleaf:
     cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
 #logging:
 #  #设置日志等级，需要指定包名
 #  level:

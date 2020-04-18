@@ -17,19 +17,8 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
             request.getRequestDispatcher("/index.html").forward(request,response);
             return false;
         }else {
-            //以登录，放养请求
-
+            //以登录，放行请求
             return true;
         }
-    }
-
-    @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-
-    }
-
-    @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-
     }
 }
