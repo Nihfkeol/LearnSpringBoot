@@ -24,8 +24,11 @@ spring:
 #    #在当前磁盘的根路径下创建SpringLogging文件夹和里面的log文件夹；使用spring.log作为默认文件
 #    path: /SpringLogging/log
 
-
-
+#server有关配置
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /curd
 ---
 server:
   port: 8083
