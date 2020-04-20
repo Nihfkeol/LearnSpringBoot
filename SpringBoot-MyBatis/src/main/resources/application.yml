@@ -4,10 +4,10 @@ spring:
     password: root
     url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
-    initialization-mode: always
-    schema:
-     - classpath:sql/department.sql
-     - classpath:sql/employee.sql
+#    initialization-mode: always
+#    schema:
+#     - classpath:sql/department.sql
+#     - classpath:sql/employee.sql
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # 连接池配置
@@ -37,6 +37,7 @@ spring:
         login-password: root
         allow: 127.0.0.1
 
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
+#开启驼峰命名规则
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true
