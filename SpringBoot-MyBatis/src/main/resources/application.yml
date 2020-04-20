@@ -37,7 +37,10 @@ spring:
         login-password: root
         allow: 127.0.0.1
 
-#开启驼峰命名规则
-#mybatis:
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
 #  configuration:
+##    开启驼峰命名规则
 #    map-underscore-to-camel-case: true
